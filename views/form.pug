@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    header 
+        h1= 'Mini Message Board'
+    
+    main
+        section.form-container 
+            form(method='POST' action='/newMessage')
+                input(type='text', placeholder='Type message' name='message' id='message')
+                input(type='text', placeholder='Type your name' name='user' id='user')
+                button(type='submit' id='submit-btn')= 'post'
