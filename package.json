@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "devstart": "nodemon ./bin/www",
+    "devStart": "nodemon app.js",
     "serverstart": "DEBUG=mini-message-board* & npm run devstart"
   },
   "dependencies": {
